@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- <script src="js/jquery-1.8.3.min.js"></script> -->
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="bootstrap-4/js/bootstrap.js"></script>
+
+<link rel="stylesheet" href="bootstrap-4/css/bootstrap.css">
+<link rel="stylesheet" href="bxslider/jquery.bxslider.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="section.css">
+<link rel="stylesheet" href="detail.css">
+<script src="bxslider/jquery.bxslider.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<script src="js/jquery.input.mask.js"></script>
+<!-- <script src="js/main.js"></script> -->
+
+<script src="fancybox/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css">
+
+<link rel="stylesheet" type="text/css" href="slick/slick.css">
+<script type="text/javascript" src="slick/slick.js"></script>
+
+<head>
+	<meta charset="UTF-8">
+	<title>forms</title>
+</head>
+<body>
+<main>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="form_call">
+					<a href="" class="close"></a>
+					<p class="form_call-head">Обратный звонок</p>
+					<p class="form_call-descr">Введите свой номер телефона и мы перезвоним вам в течении минуты, либо в любое удобное для вас время.</p>
+					<form action="">
+						<div class="input_name">
+							<i class="complete"></i>
+							<input type="text" name="our_name"  class="our_name" placeholder="Введите ваш номер телефона*"/>
+						</div>
+						<div class="set_date">
+								<input type="text" class="input_date" name="input_date" placeholder="Введите дату*">
+								<input type="text" class="input_time" name="input_time" placeholder="Введите время*">
+						</div>
+						<div class="chekbox">
+							<input class="type_call" type="radio" id="now" name="radio-group" checked>
+    						<label for="now" class="">Сейчас</label>
+    						<input class="type_call" type="radio" id="time" name="radio-group">
+    						<label for="time" class="time">В конкретное время</label>
+							<input type="submit" value="Жду звонка" class="button">
+						</div>
+					</form>
+					<p class="confirm">Нажимая еа эту кнопку, вы соглашаетесь с</p><a href="">условиями обработки персональных данных</a>
+					<img src="img/back_tel.png" class="backgr_tel">
+				</div>
+				
+				<div class="form_success">
+					<a href="" class="close"></a>
+					<i class="success"></i>
+					<p class="title">Спасибо за обращение!</p>
+					<div class="descr">В близжайшее время вам перезвонит наш специалист, ему вы сможете задать все интерисующие вас вопросы</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="container" style="margin-top: 50px;">
+	<div class="row">
+		<div class="col-lg-6">
+			<div class="form_choice_delivery">
+				<a href="" class="close"></a>
+				<p class="heading">Выберите способ доставки</p>
+				<div class="choice_deliv-block">
+					<form action="post">
+						<input type="radio" checked="checked" name="radio" id="standart_deliv" class="form_deliv-input" style="display: none;">
+						<input type="radio" checked="checked" name="radio" id="express_deliv" class="form_deliv-input" style="display: none;">
+						
+						<label class="check_deliv" for="standart_deliv">
+						  <p class="price_deliv rub">4 410</p>
+						  <p class="type_deliv">Standart-доставка</p>
+						  <p class="time_deliv">Время доставки 14-35 дней</p>
+						</label>
+						<label class="check_deliv" for="express_deliv">
+							<p class="price_deliv rub">3 410</p>
+							<p class="type_deliv">Express-доставка</p>
+							<p class="time_deliv">Время доставки: 7-14 дней</p>
+						</label>
+						<div class="line"></div>
+						<input type="submit" value="Выбрать доставку" class="btn form_subm-deliv">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<div class="form_contact_us">
+				<a href="" class="close"></a>
+				<p class="heading">Связаться с нами</p>
+				<form action="post">
+					<input type="text" class="form_inp" name="input_date" placeholder="Ваше имя*">
+					<input type="text" class="form_inp" name="input_date" placeholder="Номер телефона*">
+					<textarea name="" placeholder="Введите  сообщение"></textarea>
+					<input type="submit" class="btn" value="Отправить">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</main>
+<p id="open_fancy">OPEN FANCY</p>
+</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#open_fancy").on('click', function(){
+			$.fancybox.showLoading();
+		});
+	});
+	
+</script>
+<style>
+	.form_contact_us{
+		position: relative;
+		background-color: #fff;
+		width: 400px;
+		box-shadow: 0px 1px 8px rgba(58, 67, 84, 0.12);
+		border-radius: 5px;
+		padding: 34px 40px 40px 40px;
+		text-align: center;
+	}
+	.form_contact_us .close{
+		display: block;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		background: url(img/form_close.png) no-repeat;
+		right: 10px;
+		top: 10px;
+	}
+	.form_contact_us .heading{
+		font-size: 24px;
+		font-family: 'Gilroy ExtraBold';
+		color: #3A4354;
+	}
+	.form_contact_us form{
+		padding-top: 15px; 
+	}
+	.form_contact_us .form_inp{
+		display: block;
+		width: 100%;
+		outline: none;
+		border: 1px solid #E8EBFC;
+		background: #F5F6FC;
+		border-radius: 3px;
+		padding: 0 15px;
+		height: 50px;
+		font-size: 14px;
+		color: #3A4354;
+		margin-bottom: 15px;
+	}
+	.form_contact_us textarea{
+		display: block;
+		width: 100%;
+		outline: none;
+		border: 1px solid #E8EBFC;
+		background: #F5F6FC;
+		border-radius: 3px;
+		padding: 15px 15px;
+		font-size: 14px;
+		color: #3A4354;
+		margin-bottom: 15px;
+		height: 110px;
+		resize: none;
+	}
+	.form_contact_us .btn{
+		box-shadow: none;
+		outline: none;
+		margin-top: 18px;
+		padding: 0 30px;
+	}
+
+</style>
+<script>
+$('.slider').bxSlider({pager: false});
+
+$('.viewed_products').bxSlider({
+	minSlides: 3,
+	maxSlides: 3,
+	// slideWidth: 500,
+	pager: false,
+	controls: true,
+
+});
+$('.catalog_item-container').each(function(i, node){
+	var slider = 'slider-' + $(node).attr("id");
+	var pager = 'nav-' + $(node).attr("id");
+	$(node).find('.slider_sect-item').addClass(slider);
+	$(node).find('.pager_sect').addClass(pager);
+
+
+	 $('.' + slider).slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  arrows: false,
+		  fade: true,
+		  asNavFor: '.' + pager,
+		  centerPadding: 0
+	});
+	$('.' + pager).slick({
+		  slidesToShow: 10,
+		  slidesToScroll: 1,
+		  asNavFor: '.' + slider,
+		  dots: true,
+		  // centerMode: true,
+		  focusOnSelect: true,
+		  centerPadding: 0
+	});
+});
+
+</script>

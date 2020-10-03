@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- <script src="js/jquery-1.8.3.min.js"></script> -->
+<script src="js/jquery-1.9.1.min.js"></script>
+
+<script src="bootstrap-4/js/bootstrap.js"></script>
+<link 	rel="stylesheet" href="bootstrap-4/css/bootstrap.css">
+<link 	rel="stylesheet" href="bxslider/jquery.bxslider.css"> 
+<link 	rel="stylesheet" href="main.css">
+<link 	rel="stylesheet" href="section.css">
+<link 	rel="stylesheet" href="detail.css">
+<link rel="stylesheet" type="text/css" href="order.css">
+<script src="bxslider/jquery.bxslider.js"></script>
+<link 	rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="slick/slick.css">
+<script type="text/javascript" src="slick/slick.js"></script>
+
+<!-- <script src="js/main.js"></script> -->
+
+
+<title>detail</title>
+</head>
+
+<body>
+	<header>
+		<div class="top_line">
+			<div class="container h-100">
+				<div class="row h-100">
+					<!-- ВЕРХНЯЯ СТРОКА МОБИЛЬНАЯ -->
+					<div class="col-2 col-sm-1 d-sm-block d-md-none">
+						<div class="toggle_menu"> <i class="fas fa-bars"></i> </div>
+					</div>
+					<div class="col-2 col-sm-1 d-sm-block d-md-none">
+						<form action="" class="mob_search">
+							<button type="submit" class="mob_loupe"></button>
+						</form>
+					</div>
+					<div class="col-4 col-sm-8 d-sm-block d-md-none mob_logo"> <img src="img/mob_logo.png" alt=""> </div>
+					<div class="col-2 col-sm-1 d-sm-block d-md-none">
+						<a href="" class="mob_favor"> <i></i>
+							<div id="cnt_favor">4</div>
+						</a>
+					</div>
+					<div class="col-2 col-sm-1 d-sm-block d-md-none">
+						<a href="" class="mob_bascket"> <i></i>
+							<div id="cnt_bascket">2</div>
+						</a>
+					</div>
+					<!--   -->
+					<div class="col-xl-4 col-lg-4 col-md-4 d-none d-md-table call_action">
+						<div class="contacts"> <img src="img/ico.png" alt="" class="head_telep">
+							<div class="info">
+								<p>8 800-555-25-25</p> <a href="#">Обратный звонок</a> </div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-5 d-none d-md-block logo">
+						<a href="/" class="logotype"><img src="img/Logotype.png" alt=""></a>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-3 right_panel">
+						<div class="row personal">
+							<div class="col-lg-2 col-md-2 d-none d-md-block favourites">
+								<a href="" class="favor"> <img src="img/Vector.png" alt="">
+									<div id="cnt_favor">3</div>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-4 d-none d-md-block basket">
+								<a href="#" class="bask"> <img src="img/basket.png" alt="">
+									<div id="cnt_bask">8</div>
+								</a> <a href="#" class="bask_text d-md-none d-lg-block">
+										Корзина
+										<p class="basket_summ">1440 рублей</p>
+									</a> </div>
+							<div class="col-lg-6 col-md-6 d-none d-md-block auth">
+								<a href=""><img src="img/account.png" alt=""></a> <a href="" class="lk d-md-none d-lg-block">
+									Личный кабинет
+									<p class="lk_auth">Войдите в свой аккаунт</p>
+								</a> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mid_line">
+			<div class="container h-100">
+				<div class="row h-100">
+					<div class="col-xl-4 col-lg-4 col-md-4 d-none d-md-flex fast_search">
+						<form action="/act.php">
+							<input type="text" placeholder="Поиск по каталогу">
+							<button type="submit" class="loupe"></button>
+						</form>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 pos_menu">
+						<div class="main_menu">
+							<ul class="nav_lvl_1">
+								<li class="item_lvl_1">
+									<a href="#"> <span>Женщинам</span> </a>
+									<div class="nav_lvl_2">
+										<div class="container">
+											<div class="row">
+												<div class="col-lg-8 col-md-8 col-sm-8">
+													<div class="category">
+														<ul> <a href="#" class="category_head">Одежда</a>
+															<li class="item_lvl_2"><a href="#">Верхняя одежда</a></li>
+															<li class="item_lvl_2"><a href="#">Пиджаки и костюмы</a></li>
+															<li class="item_lvl_2 pop"><a href="#">Джинсы</a></li>
+															<li class="item_lvl_2"><a href="#">Свитеры и джемперы</a></li>
+															<li class="item_lvl_2"><a href="#">Домашняя одежда</a></li>
+															<li class="item_lvl_2"><a href="#">Брюки</a></li>
+															<li class="item_lvl_2"><a href="#">Футболки и поло</a></li>
+															<li class="item_lvl_2"><a href="#">Спортивные костюмы</a></li>
+															<li class="item_lvl_2"><a href="#">Нижнее белье</a></li> <a href="" class="all_catalog">Вся одежда ...</a> </ul>
+													</div>
+													<div class="category">
+														<ul> <a href="#" class="category_head">Обувь</a>
+															<li class="item_lvl_2"><a href="#">Ботинки</a></li>
+															<li class="item_lvl_2"><a href="#">Доманшняя обувь</a></li>
+															<li class="item_lvl_2"><a href="#">Кроссовки и кеды</a></li>
+															<li class="item_lvl_2"><a href="#">Мокасины и топсайдеры</a></li>
+															<li class="item_lvl_2"><a href="#">Резиновая обувь</a></li>
+															<li class="item_lvl_2 pop"><a href="#">Туфли</a></li>
+															<li class="item_lvl_2"><a href="#">Сандали и сланцы</a></li>
+															<li class="item_lvl_2"><a href="#">Сапоги</a></li>
+															<li class="item_lvl_2"><a href="#">Уход на обувью</a></li> <a href="" class="all_catalog">Вся обувь ...</a> </ul>
+													</div>
+													<div class="category">
+														<ul> <a href="#" class="category_head">Аксессуары</a>
+															<li class="item_lvl_2"><a href="#">Галстуки и запонки</a></li>
+															<li class="item_lvl_2"><a href="#">Головные уборы</a></li>
+															<li class="item_lvl_2"><a href="#">Канцелярские товары</a></li>
+															<li class="item_lvl_2 pop"><a href="#">Кошельки и визитницы</a></li>
+															<li class="item_lvl_2"><a href="#">Ремни и подтяжки</a></li>
+															<li class="item_lvl_2"><a href="#">Сумки и рюкзаки</a></li>
+															<li class="item_lvl_2"><a href="#">Очки</a></li>
+															<li class="item_lvl_2"><a href="#">Наручные часы</a></li>
+															<li class="item_lvl_2"><a href="#">Шарфы и платки</a></li> <a href="" class="all_catalog">Все аксессуары ...</a> </ul>
+													</div>
+													<div class="category">
+														<ul> <a href="#" class="category_head">Всё для спорта</a>
+															<li class="item_lvl_2"><a href="#">Спортивные костюмы</a></li>
+															<li class="item_lvl_2"><a href="#">Рюкзаки</a></li>
+															<li class="item_lvl_2"><a href="#">Кроссовки и кеды</a></li>
+															<li class="item_lvl_2"><a href="#">Головные уборы</a></li>
+															<li class="item_lvl_2"><a href="#">Брюки</a></li>
+															<li class="item_lvl_2"><a href="#">Перчатки и варежки</a></li>
+															<li class="item_lvl_2"><a href="#">Футболки и поло</a></li>
+															<li class="item_lvl_2 pop"><a href="#">Сапоги</a></li>
+															<li class="item_lvl_2"><a href="#">Шорты</a></li> <a href="" class="all_catalog">Все для спорта ...</a> </ul>
+													</div>
+												</div>
+												<div class="col-lg-4 col-md-4 col-sm-4">
+													<div class="card-deck toogle_card">
+														<div class="card">
+															<a href="#"><img src="img/cart_2_head.png" alt=""></a>
+														</div>
+														<div class="card">
+															<a href="#"><img src="img/cart_1_head.png" alt=""></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="item_lvl_1">
+									<a href="#"> <span>Мужчинам</span> </a>
+								</li>
+								<li class="item_lvl_1">
+									<a href="#"> <span>Детям</span> </a>
+								</li>
+								<li class="sale item_lvl_1"><a href="#"><span>Sale от 60%</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 d-none d-lg-block social">
+						<ul>
+							<li><a href="#"><i class="vk"></i></a></li>
+							<li><a href="#"><i class="telegramm"></i></a></li>
+							<li><a href="#"><i class="youtube"></i></a></li>
+							<li><a href="#"><i class="insta"></i></a></li>
+							<li><a href="#"><i class="whatsapp"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="bread_sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 ">
+						<ul class="breadcrumb">
+							<li><a href="#"><span>Главная</span></a><i class="angel-right"></i></li>
+							<li><a href="#"><span>Мужчинам</span></a><i class="angel-right"></i></li>
+							<li><a href="#"><span>Обувь</span></a><i class="angel-right"></i></li>
+							<li class="active"><span>Кроссовки и кеды</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="product_sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-sm-12 left_col">
+						<div class="container slider_container">
+							<div class="row">
+								<div class="col-lg-3">
+									<!-- <div class="dop-slider"> -->
+										
+											<a href="" data-slide-index="0" class="box">
+												<img src="img/slice1.png" alt="">
+											</a>
+											<a href="" data-slide-index="1" class="box">
+												<img src="img/slice2.png" alt="">
+											</a>
+											<a href="" data-slide-index="2" class="box">
+												<img src="img/slice3.png" alt="">
+											</a>
+											<a href="" data-slide-index="3" class="box">
+												<img src="img/slice4.png" alt="">
+											</a>
+											<a href="" data-slide-index="3" class="box">
+												<img src="img/slice4.png" alt="">
+											</a>
+										</div>
+								<!-- </div> -->
+								<div class="col-lg-9">
+									<div class="wrap-slider">
+										<ul class="slider_product">
+											<li data-slide-index="0"><img src="img/main.png" alt=""></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mobile_prod d-block d-md-none">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12 no-pd">
+										<div class="product_info">
+											<div class="red_rating">
+												<div class="rating_container">
+													<div class="stars"></div>
+													<div class="star_progress"></div>
+												</div> <span class="votes">9</span> </div>
+											<p class="name">UA Surge</p>
+											<p class="category">Under Armour, Кроссовки мужские</p>
+											<div class="delivery_block"> <span class="cost" style="display: none">Цена:</span>
+												<p class="full_price" style="display: none"> 10 945 р (без скидки)</p> <span class="cost">Цена:</span>
+												<p class="full_price throught"> 10 945 р</p> <span class="cost_discnt">Цена со скидкой:</span>
+												<p class="new_price">4 410 р</p>
+												<div class="delivery">
+													<p>Standart-доставка: <span>14-35 дней</span></p>
+													<p>Цена с Express-доставкой (7-14 дней): <span>5 410 р</span></p>
+												</div>
+											</div>
+											<div class="product_sku">
+												<div class="prod_sku_container">
+													<p class="title">Выберите цвет:</p>
+													<div class="scu_block">
+														<ul>
+															<li class="sku_item-color active"><img src="img/sku4.png" alt=""></li>
+															<li class="sku_item-color"><img src="img/sku1.png" alt=""></li>
+															<li class="sku_item-color"><img src="img/sku2.png" alt=""></li>
+															<li class="sku_item-color"><img src="img/sku3.png" alt=""></li>
+														</ul>
+													</div>
+												</div>
+												<div class="prod_sku_container">
+													<p class="title">Выберите размер: (RU)</p>
+													<div class="scu_block">
+														<ul>
+															<li class="sku_item-size active">31</li>
+															<li class="sku_item-size">32</li>
+															<li class="sku_item-size">33</li>
+															<li class="sku_item-size">34</li>
+															<li class="sku_item-size">34</li>
+															<li class="sku_item-size">34</li>
+														</ul>
+													</div>
+												</div>
+											</div> <a href="#" class="download_size">Таблица соответствия размеров</a>
+											<div class="get_prod"> <a href="#" class="add_cart"><span>Добавить в  корзину</span></a> <a href="#" class="add_favor"><i class="heart"></i></a> </div>
+											<div class="mob_about"> <a href="#" class="more_about">О товаре</a>
+												<div class="product_text">
+													<p class="title">Описание товара</p>
+													<div class="detail_text">Кроссовки от спортивного бренда выполнены из "дышащего" сетчатого текстиля в сочетании с полимером. Верх дополнен необходимой перфорацией для воздухопроницаемости. Мягкая подошва EVA обеспечивает необходимую амортизацию. Глубокие гибкие канавки для дополнительной гибкости подошвы.</div>
+												</div>
+											</div>
+											<div class="mob_delivery"> <a href="#" class="deliv_title">Доставка по России</a>
+												<div class="delivery_info" style="display: none">
+													<div class="item">
+														<p class="title">Доставка по России</p>
+														<p><span class="cost">от 129 руб.</span><span class="delivery_to">Доставка в Москву</span></p>
+														<p><span class="cost">от 149 руб.</span><span class="delivery_to">Доставка в Санкт-Петербург</span></p>
+														<p><span class="cost">от 189 руб.</span><span class="delivery_to">Доставка в Регионы</span></p>
+														<p> <a href="" class="more">Подробнее о доставке</a> <a href="" class="more">Подробнее об оплате</a> </p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="line"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="advantage d-none d-md-flex">
+							<div class="adv_item"> <img src="img/safely.png">
+								<p class="title">Надежно</p>
+								<p class="descr">Оплачивайте до 90% от заказа при получении посылки. Заказ можно проверить перед получением</p>
+							</div>
+							<div class="adv_item"> <img src="img/quality.png">
+								<p class="title">Качественно</p>
+								<p class="descr">Мы тщательно отбираем для вас поставщиков и вы получаете только гарантированно качественные товары</p>
+							</div>
+							<div class="adv_item"> <img src="img/clock.png">
+								<p class="title">Удобно</p>
+								<p class="descr">Доставка вашего товара от 7 дней в любой город</p>
+							</div>
+						</div>
+						<div class="product_text">
+							<p class="title">Описание товара</p>
+							<div class="detail_text">Кроссовки от спортивного бренда выполнены из "дышащего" сетчатого текстиля в сочетании с полимером. Верх дополнен необходимой перфорацией для воздухопроницаемости. Мягкая подошва EVA обеспечивает необходимую амортизацию. Глубокие гибкие канавки для дополнительной гибкости подошвы.</div>
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-12 no-pd">
+									<div class="reviews">
+										<div class="tabs"> <a href="" class="tab active">Отзывы <span>132</span></a> <a href="" class="tab">Вопросы <span>21</span></a> <a href="" class="tab">Видеообзор <span>2</span></a> </div>
+										<div class="stat_review">
+											<div class="container h-100">
+												<div class="row h-100">
+													<div class="col-lg-3 col-md-3 d-none d-md-block">
+														<div class="info">
+															<p class="ball">4.1</p>
+															<div class="red_rating">
+																<div class="rating_container">
+																	<div class="stars"></div>
+																	<div class="star_progress"></div>
+																</div>
+															</div>
+															<div class="cnt_review">На основании
+																<br> 132 отзывов</div>
+														</div>
+													</div>
+													<div class="col-lg-5 col-md-5 d-none d-md-block">
+														<div class="progress_bars">
+															<div class="progress"> <span class="val">5</span>
+																<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div> <span class="percent">80%</span> </div>
+															<div class="progress"> <span class="val">4</span>
+																<div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div> <span class="percent">10%</span> </div>
+															<div class="progress"> <span class="val">3</span>
+																<div class="progress-bar" role="progressbar" style="width: 6%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div> <span class="percent">6%</span> </div>
+															<div class="progress"> <span class="val">2</span>
+																<div class="progress-bar" role="progressbar" style="width: 4%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> <span class="percent">4%</span> </div>
+															<div class="progress"> <span class="val">1</span>
+																<div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div> <span class="percent">0%</span> </div>
+														</div>
+													</div>
+													<div class="col-lg-4 col-md-4 col-sm-12">
+														<div class="write_review"> <a href="" class="rule">Правила оформления отзывов и вопросов</a>
+															<p class="title">Хотите выразить свои мысли касательно товара?</p> <a href="" class="btn_review">Написать отзыв</a> </div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="list_review">
+											<div class="tabs_sort">
+												<p class="sort_title">Сортировать по:</p>
+												<ul class="sort_tab">
+													<li><a href="#"><span>Дате</span></a></li>
+													<li class="active"><a href="#"><span>Оценке</span></a></li>
+													<li><a href="#"><span>Полезности</span></a></li>
+												</ul>
+												<label class="only_foto">Только с фото
+													<input type="checkbox" checked="checked"> <span class="checkmark"></span> </label> <a href="" class="rule">Правила оформления отзывов и вопросов</a> </div>
+											<div class="item_review">
+												<div class="container">
+													<div class="row">
+														<div class="col-lg-4 col-sm-12 col-12">
+															<div class="person_info"> <img src="img/review_foto.jpg" alt="">
+																<div class="wrap_txt">
+																	<p class="name">Иван Иванов</p>
+																	<p class="сnt_review">Отзывов: 2</p>
+																	<div class="red_rating d-block d-md-none">
+																		<div class="rating_container">
+																			<div class="stars"></div>
+																			<div class="star_progress"></div>
+																		</div>
+																		<p class="data">2 июня в 6:00</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-lg-8 col-sm-12 col-12">
+															<div class="head">Шикарные кросы</div>
+															<div class="red_rating d-none d-md-block">
+																<div class="rating_container">
+																	<div class="stars"></div>
+																	<div class="star_progress"></div>
+																</div>
+																<p class="data">2 июня 1945 года, в 6:00</p>
+															</div>
+															<div class="text_review">Кроссы норм, взял не пожалел. И в дождь, и в снег, и в слякоть по Берлину, никаких нареканий. Виссарионович рекомендует!</div>
+															<div class="feedback">
+																<p class="ask">Отзыв был полезен?</p>
+																<a href="#" class="social-like"> <span class="like"><i class="like"></i></span> <span class="count">999</span> </a>
+																<a href="#" class="social-dislike"> <span class="like"><i class="dislike"></i></span> <span class="count">10</span> </a>
+																<div class="recomend"> Рекомендую </div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="item_review">
+												<div class="container">
+													<div class="row">
+														<div class="col-lg-4 col-sm-12 col-12">
+															<div class="person_info"> <img src="img/review_foto.jpg" alt="">
+																<div class="wrap_txt">
+																	<p class="name">Иван Иванов</p>
+																	<p class="сnt_review">Отзывов: 2</p>
+																	<div class="red_rating d-block d-md-none">
+																		<div class="rating_container">
+																			<div class="stars"></div>
+																			<div class="star_progress"></div>
+																		</div>
+																		<p class="data">2 июня в 6:00</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-lg-8 col-sm-12 col-12">
+															<div class="head">Шикарные кросы</div>
+															<div class="red_rating d-none d-md-block">
+																<div class="rating_container">
+																	<div class="stars"></div>
+																	<div class="star_progress"></div>
+																</div>
+																<p class="data">2 июня 1945 года, в 6:00</p>
+															</div>
+															<div class="text_review">Кроссы норм, взял не пожалел. И в дождь, и в снег, и в слякоть по Берлину, никаких нареканий. Виссарионович рекомендует!</div>
+															<div class="feedback">
+																<p class="ask">Отзыв был полезен?</p>
+																<a href="#" class="social-like"> <span class="like"><i class="like"></i></span> <span class="count">999</span> </a>
+																<a href="#" class="social-dislike"> <span class="like"><i class="dislike"></i></span> <span class="count">10</span> </a>
+																<div class="recomend"> Рекомендую </div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="item_review">
+												<div class="container">
+													<div class="row">
+														<div class="col-lg-4 col-sm-12 col-12">
+															<div class="person_info"> <img src="img/review_foto.jpg" alt="">
+																<div class="wrap_txt">
+																	<p class="name">Иван Иванов</p>
+																	<p class="сnt_review">Отзывов: 2</p>
+																	<div class="red_rating d-block d-md-none">
+																		<div class="rating_container">
+																			<div class="stars"></div>
+																			<div class="star_progress"></div>
+																		</div>
+																		<p class="data">2 июня в 6:00</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-lg-8 col-sm-12 col-12">
+															<div class="head">Шикарные кросы</div>
+															<div class="red_rating d-none d-md-block">
+																<div class="rating_container">
+																	<div class="stars"></div>
+																	<div class="star_progress"></div>
+																</div>
+																<p class="data">2 июня 1945 года, в 6:00</p>
+															</div>
+															<div class="text_review">Кроссы норм, взял не пожалел. И в дождь, и в снег, и в слякоть по Берлину, никаких нареканий. Виссарионович рекомендует!</div>
+															<div class="feedback">
+																<p class="ask">Отзыв был полезен?</p>
+																<a href="#" class="social-like"> <span class="like"><i class="like"></i></span> <span class="count">999</span> </a>
+																<a href="#" class="social-dislike"> <span class="like"><i class="dislike"></i></span> <span class="count">10</span> </a>
+																<div class="recomend"> Рекомендую </div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="review_more"> <a href="#">Показать еще</a> </div>
+											<div class="line d-block d-md-none"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="viewed_product">
+							<div class="head">Вы недавно смотрели</div>
+							<!-- <div class="container"> -->
+								<i class="right" aria-hidden="true"></i>
+								<i class="left" aria-hidden="true"></i>
+								<div class="slides_viewed">
+										<div class="item_viewed"  id="1">
+											<div class="dop_img">
+												<div class="pager_sect"> <img src="img/dop_img1.png" alt=""> <img src="img/dop_img2.png" alt=""> <img src="img/dop_img1.png" alt=""> </div>
+											</div>
+											<div class="viewed_cart">
+												<figure>
+													<a href="#" class="slider_sect-item"> <img src="img/viewed1.png"> <img src="img/viewed2.png"> <img src="img/viewed1.png"> </a>
+													<div class="markers">
+														<div class="marker blue">new</div>
+													</div>
+													<div class="info">
+														<p class="price"> 3 700 р </p>
+														<a href="#"> <span class="model">Under Armour</span> / Кроссовки UA Heatseeker </a>
+														<div class="prod_row">
+															<div class="rating_container">
+																<div class="stars"></div>
+																<div class="star_progress"></div>
+															</div> <span class="votes">9</span> <a href="" class="favor"><i class="heart"></i></a> </div>
+													</div>
+												</figure>
+											</div>
+											<div class="dop">
+												<div class="extra">
+													<p class="dop_size">Размеры в наличии (RUS):</p>
+													<ul>
+														<li>39</li>
+														<li>40</li>
+														<li>41</li>
+														<li>42</li>
+													</ul>
+												</div>
+											</div>
+									</div>
+									<div class="item_viewed" id="2">
+										<div class="dop_img">
+											<div class="pager_sect"> <img src="img/dop_img1.png" alt=""> <img src="img/dop_img2.png" alt=""> <img src="img/dop_img1.png" alt=""> </div>
+										</div>
+										<div class="viewed_cart" >
+											<figure>
+												<a href="#" class="slider_sect-item"> <img src="img/viewed1.png"> <img src="img/viewed2.png"> <img src="img/viewed1.png"> </a>
+												<div class="markers">
+													<div class="marker blue">new</div>
+												</div>
+												<div class="info">
+													<p class="price"> 3 700 р </p>
+													<a href="#"> <span class="model">Under Armour</span> / Кроссовки UA Heatseeker </a>
+													<div class="prod_row">
+														<div class="rating_container">
+															<div class="stars"></div>
+															<div class="star_progress"></div>
+														</div> <span class="votes">9</span> <a href="" class="favor"><i class="heart"></i></a> </div>
+												</div>
+											</figure>
+										</div>
+										<div class="dop">
+											<div class="extra">
+												<p class="dop_size">Размеры в наличии (RUS):</p>
+												<ul>
+													<li>39</li>
+													<li>40</li>
+													<li>41</li>
+													<li>42</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="item_viewed" id="3">
+										<div class="dop_img">
+											<div class="pager_sect"> 
+												<img src="img/dop_img1.png" alt="">
+												<img src="img/dop_img2.png" alt="">
+												<img src="img/dop_img1.png" alt=""> 
+											</div>
+										</div>
+										<div class="viewed_cart">
+											<figure>
+												<a href="#" class="slider_sect-item"> <img src="img/viewed1.png"> <img src="img/viewed2.png"> <img src="img/viewed1.png"> </a>
+												<div class="markers">
+													<div class="marker blue">new</div>
+												</div>
+												<div class="info">
+													<p class="price"> 3 700 р </p>
+													<a href="#"> <span class="model">Under Armour</span> / Кроссовки UA Heatseeker </a>
+													<div class="prod_row">
+														<div class="rating_container">
+															<div class="stars"></div>
+															<div class="star_progress"></div>
+														</div> <span class="votes">9</span> <a href="" class="favor"><i class="heart"></i></a> </div>
+												</div>
+											</figure>
+											<div class="extra">
+												<p class="dop_size">Размеры в наличии (RUS):</p>
+												<ul>
+													<li>39</li>
+													<li>40</li>
+													<li>41</li>
+													<li>42</li>
+												</ul>
+											</div>
+										</div>
+										<div class="dop"></div>
+									</div>
+									<div class="item_viewed" id="4">
+										<div class="dop_img">
+											<div class="pager_sect"> <img src="img/dop_img1.png" alt=""> <img src="img/dop_img2.png" alt=""> <img src="img/dop_img1.png" alt=""> </div>
+										</div>
+										<div class="viewed_cart" >
+											<figure>
+												<a href="#" class="slider_sect-item"> <img src="img/viewed1.png"> <img src="img/viewed2.png"> <img src="img/viewed1.png"> </a>
+												<div class="markers">
+													<div class="marker blue">new</div>
+												</div>
+												<div class="info">
+													<p class="price"> 3 700 р </p>
+													<a href="#"> <span class="model">Under Armour</span> / Кроссовки UA Heatseeker </a>
+													<div class="prod_row">
+														<div class="rating_container">
+															<div class="stars"></div>
+															<div class="star_progress"></div>
+														</div> <span class="votes">9</span> <a href="" class="favor"><i class="heart"></i></a> </div>
+												</div>
+											</figure>
+										</div>
+										<div class="dop">
+											<div class="extra">
+												<p class="dop_size">Размеры в наличии (RUS):</p>
+												<ul>
+													<li>39</li>
+													<li>40</li>
+													<li>41</li>
+													<li>42</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="item_viewed" id="5">
+										<div class="dop_img">
+											<div class="pager_sect"> <img src="img/dop_img1.png" alt=""> <img src="img/dop_img2.png" alt=""> <img src="img/dop_img1.png" alt=""> </div>
+										</div>
+										<div class="viewed_cart" >
+											<figure>
+												<a href="#" class="slider_sect-item"> <img src="img/viewed1.png"> <img src="img/viewed2.png"> <img src="img/viewed1.png"> </a>
+												<div class="markers">
+													<div class="marker blue">new</div>
+												</div>
+												<div class="info">
+													<p class="price"> 3 700 р </p>
+													<a href="#"> <span class="model">Under Armour</span> / Кроссовки UA Heatseeker </a>
+													<div class="prod_row">
+														<div class="rating_container">
+															<div class="stars"></div>
+															<div class="star_progress"></div>
+														</div> <span class="votes">9</span> <a href="" class="favor"><i class="heart"></i></a> </div>
+												</div>
+											</figure>
+										</div>
+										<div class="dop">
+											<div class="extra">
+												<p class="dop_size">Размеры в наличии (RUS):</p>
+												<ul>
+													<li>39</li>
+													<li>40</li>
+													<li>41</li>
+													<li>42</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- </div> -->
+					<div class="col-lg-4 col-md-4 d-none d-md-flex right_col">
+						<div class="product_info">
+							<div class="red_rating">
+								<div class="rating_container">
+									<div class="stars"></div>
+									<div class="star_progress"></div>
+								</div> <span class="votes">9</span> </div>
+							<p class="name">UA Surge</p>
+							<p class="category">Under Armour, Кроссовки мужские</p>
+							<div class="delivery_block"> <span class="cost" style="display: none">Цена:</span>
+								<p class="full_price" style="display: none"> 10 945 р (без скидки)</p> <span class="cost">Цена:</span>
+								<p class="full_price throught"> 10 945 р</p> <span class="cost_discnt">Цена со скидкой:</span>
+								<p class="new_price">4 410 р</p>
+								<div class="delivery">
+									<p>Standart-доставка: <span>14-35 дней</span></p>
+									<p>Цена с Express-доставкой (7-14 дней): <span>5 410 р</span></p>
+								</div>
+							</div>
+							<div class="product_sku">
+								<div class="prod_sku_container">
+									<p class="title">Выберите цвет:</p>
+									<div class="scu_block">
+										<ul>
+											<li class="sku_item-color active"><img src="img/sku4.png" alt=""></li>
+											<li class="sku_item-color"><img src="img/sku1.png" alt=""></li>
+											<li class="sku_item-color"><img src="img/sku2.png" alt=""></li>
+											<li class="sku_item-color"><img src="img/sku3.png" alt=""></li>
+										</ul>
+									</div>
+								</div>
+								<div class="prod_sku_container">
+									<p class="title">Выберите размер: (RU)</p>
+									<div class="scu_block">
+										<ul>
+											<li class="sku_item-size active">31</li>
+											<li class="sku_item-size">32</li>
+											<li class="sku_item-size">33</li>
+											<li class="sku_item-size">34</li>
+											<li class="sku_item-size">34</li>
+											<li class="sku_item-size">34</li>
+										</ul>
+									</div>
+								</div>
+							</div> <a href="#" class="download_size">Таблица соответствия размеров</a>
+							<div class="get_prod"> <a href="#" class="add_cart"><span>Добавить в  корзину</span></a> <a href="#" class="add_favor"><i class="heart"></i></a> </div>
+							<div class="delivery_info">
+								<div class="item">
+									<p class="title">Доставка по России</p>
+									<p><span class="cost">от 129 руб.</span><span class="delivery_to">Доставка в Москву</span></p>
+									<p><span class="cost">от 149 руб.</span><span class="delivery_to">Доставка в Санкт-Петербург</span></p>
+									<p><span class="cost">от 189 руб.</span><span class="delivery_to">Доставка в Регионы</span></p>
+									<p> <a href="" class="more">Подробнее о доставке</a> <a href="" class="more">Подробнее об оплате</a> </p>
+								</div>
+								<div class="item">
+									<p class="title">О компании</p>
+									<p><span class="prop">Артикул товара:</span><span class="prop_val">1931803100</span></p>
+									<p><span class="prop">Страна бренда:</span><span class="prop_val">США</span></p>
+									<p><span class="prop">Материал:</span><span class="prop_val">50% текстиль, 30% полиуретан…</span></p>
+									<p> <a href="" class="more">Подробнее о товаре</a> </p>
+								</div>
+							</div>
+							<div class="share">
+								<div class="title">Поделиться</div>
+								<div class="soc">
+									<ul>
+										<li>
+											<a href="#" class="vk"></a>
+										</li>
+										<li>
+											<a href="#" class="insta"></a>
+										</li>
+										<li>
+											<a href="#" class="telegramm"></a>
+										</li>
+										<li>
+											<a href="#" class="odn"></a>
+										</li>
+										<li>
+											<a href="#" class="whatsapp"></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="f_top_line">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-4 order-1 order-sm-0 f_item">
+						<div class="contacts">
+							<p class="contact_title">Связаться с нами</p>
+							<p class="out_tel">Наш контактный номер телефона</p> <a href="tel:000000" class="f_tel"><span>8 (800)</span> 555-25-25</a> <a href="" class="f_problem">Проблемы с заказом?</a> <a href="" class="f_ask">Задать вопрос</a> </div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 f_item">
+						<div class="menu_wrap"> <span class="f_menu_title">Сервис</span>
+							<ul class="f_menu">
+								<li class="f_menu_item"><a href="#"><span>Таблица размеров</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Как сделать заказ</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Отследить заказ</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Оплата и доставка</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Наши гарантии</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Как оплатить</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Возврат</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 f_item">
+						<div class="menu_wrap"> <span class="f_menu_title">О компании</span>
+							<ul class="f_menu">
+								<li class="f_menu_item"><a href="#"><span>Политика конфиденциальности</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Наши приемущества</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Качество</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Бонусная программа</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Новости   &   Блог</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Контакты</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>О нас</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 d-none d-md-block">
+						<div class="subscribe">
+							<p class="subs_title">Подпишитесь на нас</p>
+							<a href="" class="vk"></a>
+							<a href="" class="insta"></a>
+							<a href="" class="telegramm"></a>
+							<a href="" class="youtube"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="f_bott_line">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-12">
+						<div class="copy">© 2019. Bambuck Mall</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 d-none d-sm-block">
+						<div class="dev"><a href=""><span>Разработка сайта</span> SP-Artgroup</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
+<script src="js/detail.js"></script>
+

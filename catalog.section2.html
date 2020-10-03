@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- <script src="js/jquery-1.8.3.min.js"></script> -->
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="bootstrap-4/js/bootstrap.js"></script>
+
+<link rel="stylesheet" href="bootstrap-4/css/bootstrap.css">
+<link rel="stylesheet" href="bxslider/jquery.bxslider.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="section.css">
+<script src="bxslider/jquery.bxslider.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<script src="js/jquery.input.mask.js"></script>
+<script src="js/main.js"></script>
+
+<script src="fancybox/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css">
+
+
+<link rel="stylesheet" type="text/css" href="slick/slick.css">
+<script type="text/javascript" src="slick/slick.js"></script>
+
+<link rel="stylesheet" type="text/css" href="selectplugin/jquery.formstyler.css">
+<link rel="stylesheet" type="text/css" href="selectplugin/jquery.formstyler.theme.css">
+<script src="selectplugin/jquery.formstyler.min.js"></script>
+<head>
+	<meta charset="UTF-8">
+	<title>section</title>
+</head>
+<body>
+	<header>
+		<div class="top_line">
+			<div class="container h-100">
+				<div class="row h-100">
+
+					<!-- ВЕРХНЯЯ СТРОКА МОБИЛЬНАЯ -->
+					<div class="col-2 col-sm-1 d-sm-block d-md-none">
+						<div class="toggle_menu">
+							<i class="fas fa-bars"></i>
+						</div>
+					</div>
+					<div class="col-2 col-sm-1 d-sm-block d-md-none">
+						<form action="" class="mob_search">
+							<button type="submit" class="mob_loupe"></button>
+						</form>
+					</div>
+					<div class="col-4 col-sm-8 d-sm-block d-md-none mob_logo">
+						<img src="img/mob_logo.png" alt="">
+					</div>
+					<div class="col-2 col-sm-1 d-sm-block d-md-none">
+						<a href="" class="mob_favor">
+							<i></i>
+							<div id="cnt_favor">4</div>
+						</a>
+					</div>
+					<div class="col-2 col-sm-1 d-sm-block d-md-none">
+						<a href="" class="mob_bascket">
+							<i></i>
+						<div id="cnt_bascket">2</div>
+						</a>
+					</div>
+
+					<!--   -->
+					<div class="col-xl-4 col-lg-4 col-md-4 d-none d-md-table call_action">
+						<div class="contacts">
+							<img src="img/ico.png" alt="" class="head_telep">
+							<div class="info">
+									<p>8 800-555-25-25</p>
+									<a href="#">Обратный звонок</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-5 d-none d-md-block logo">
+						<a href="/" class="logotype"><img src="img/Logotype.png" alt=""></a>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-3 right_panel">
+						<div class="row personal">
+							<div class="col-lg-2 col-md-2 d-none d-md-block favourites">
+									<a href="" class="favor">
+										<img src="img/Vector.png" alt="">
+										<div id="cnt_favor">3</div>
+									</a>
+							</div>
+							<div class="col-lg-4 col-md-4 d-none d-md-block basket">
+									<a href="#" class="bask">
+										<img src="img/basket.png" alt="">
+										<div id="cnt_bask">8</div>
+									</a>
+									<a href="#" class="bask_text d-md-none d-lg-block">
+										Корзина
+										<p class="basket_summ">1440 рублей</p>
+									</a>
+							</div>
+							<div class="col-lg-6 col-md-6 d-none d-md-block auth">
+								<div class="wrap_auth">
+									<!-- <a href=""><img src="img/account.png" alt=""></a>
+									
+									<a href="" class="lk d-md-none d-lg-block">
+										Личный кабинет
+										<p class="lk_auth">Войдите в свой аккаунт</p>
+									</a> -->
+									<a href="">
+										<img src="img/account.png" alt=""></a>
+									<a href="" class="name d-md-none d-lg-block">
+									 Екатерина Суздалева
+									<p class="account">Управление аккаунтом</p>
+									<div class="drop_account">
+										<ul>
+											<li><a href="#"><span>Мои заказы</span></a></li>
+											<li class="active"><a href="#"><span>Отзывы и вопросы</span></a></li>
+											<li><a href="#"><span>Подписки</span></a></li>
+										</ul>
+										<a href="#" class="personal"><span>Личные данные</span></a>
+										<a href="#" class="exit"><span>Выйти из аккаунта</span></a>
+										
+									</div>
+									</a>
+									
+								</div>
+								<!-- <a href="" class="lk d-md-none d-lg-block">
+									 Екатерина Суздалева
+									<p class="lk_auth">Управление аккаунтом</p>
+								</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mid_line">
+			<div class="container h-100">
+				<div class="row h-100">
+					<div class="col-xl-4 col-lg-4 col-md-4 d-none d-md-flex fast_search">
+							<form action="/act.php">
+								<input type="text" placeholder="Поиск по каталогу">
+								<button type="submit" class="loupe"></button>	
+							</form>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 pos_menu">
+						<div class="main_menu">
+							<ul class="nav_lvl_1">
+								<li class="item_lvl_1">
+									<a href="#">
+										<span>Женщинам</span>
+									</a>
+								</li>
+								<li class="item_lvl_1">
+									<a href="#">
+										<span>Мужчинам</span>
+									</a>
+								</li>
+								<li class="item_lvl_1">
+									<a href="#">
+										<span>Детям</span>
+									</a>
+								</li>
+								<li class="sale item_lvl_1"><a href="#"><span>Sale от 60%</span></a></li>
+							</ul>
+						</div>	
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 d-none d-lg-block social">
+							<ul>
+								<li><a href="#"><i class="vk"></i></a></li>
+								<li><a href="#"><i class="telegramm"></i></a></li>
+								<li><a href="#"><i class="youtube"></i></a></li>
+								<li><a href="#"><i class="insta"></i></a></li>
+								<li><a href="#"><i class="whatsapp"></i></a></li>
+							</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="top_section">
+			<div class="bread_sec">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 ">
+							<ul class="breadcrumb">
+								<li><a href="#"><span>Главная</span></a><i class="angel-right"></i></li>
+								<li><a href="#"><span>Мужчинам</span></a><i class="angel-right"></i></li>
+								<li><a href="#"><span>Обувь</span></a><i class="angel-right"></i></li>
+								<li class="active"><span>Кроссовки и кеды</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider_sec d-none d-md-block">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 slider_cat_container">
+							<p class="slide_head">Взгляните на наши лучшие предложения</p>
+							
+							<div class="slider_cat">
+								<div class="slide_cat_item"><a href="#"><img src="img/slider_cat_1.png"></a></div>
+								<div class="slide_cat_item"><a href="#"><img src="img/slider_cat_2.png"></a></div>
+								<div class="slide_cat_item"><a href="#"><img src="img/slider_cat_3.png"></a></div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inc_action d-none d-md-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<div class="info_action">
+							<p class="act_head">До 13 февраля: Скидка от 60% на все актуальные коллекции!</p>
+							<a href="#" class="act_item">Женщинам</a>
+							<a href="#" class="act_item">Мужчинам</a>
+							<a href="#" class="act_item">Детям</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="act_close"></a>
+		</div>
+
+<div class="catalog_section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10 offset-lg-2 offset-md-3">
+				<h1>Кроссовки и кеды</h1>
+			
+			<div class="filtered">
+				<div class="mob_filter">
+					<i class="icon"></i><span>Показать фильтры</span>
+				</div>
+				<div class="sort_panel">
+					 <div class="sort_by_1">
+					 	<a href="" class="current">По популярности</a>
+					 	<div class="option_sort">
+					 		<a href="#">По популярности</a>
+					 		<a href="#">По возрастанию цены</a>
+					 		<a href="#">По убыванию цены</a>
+					 	</div>
+                         
+					 </div>
+					 <div class="sort_by_2">
+                        <a href="" class="current">Товаров по 20</a>
+                         <div class="option_sort">
+					 		<a href="#">Товаров по 20</a>
+					 		<a href="#">Товаров по 40</a>
+					 		<a href="#">Товаров по 60</a>
+					 	</div>
+                    </div>
+				</div>
+				<div class="filter_panel">
+					<form method="post" action="">					
+					<label class="item_filter"">
+						<select>
+							<option>Материалы</option>
+							<option>2</option>
+						</select>
+					</label>
+					<label class="item_filter">
+						<select>
+							<option>Цвет</option>
+							<option>2</option>
+						</select>
+					</label>
+					<label class="item_filter">
+						<select>
+							<option>Размер</option>
+							<option>2</option>
+						</select>
+					</label>
+					<label class="item_filter">
+						<select>
+							<option>Бренд</option>
+							<option>2</option>
+						</select>
+					</label>
+					<label class="item_filter">
+						<select>
+							<option>Цена</option>
+							<option>2</option>
+						</select>
+					</label>
+					<label class="item_filter">
+						<select>
+							<option>Сезон</option>
+							<option>2</option>
+						</select>
+					</label>
+					<label class="item_filter">
+						<select>
+							<option>Стиль</option>
+							<option>2</option>
+						</select>
+					</label>
+					</form>
+				</div>
+			</div>
+			</div>
+			<div class="col-lg-2 col-xl-2 col-md-3 d-none d-md-block no-pr">
+				<div class="left_side">
+					<ul class="left_menu">
+						<li class="parent active">
+							<a href="">
+								<span>Обувь<span class="count">620</span></span>
+							</a>
+							<ul class="submenu_lvl2">
+								<li class="active">
+									<a href=""><span>Ботинки</span><span class="count">160</span></a>
+									<ul class="submenu_lvl3">
+										<li class="active">
+											<a href=""><span>test1</span><span class="count">160</span></a>
+											<ul class="submenu_lvl4">
+												<li><a href=""><span>Дополнительный подпункт</span><span class="count">160</span></a></li>
+												<li><a href=""><span>Дополнительный подпункт</span><span class="count">160</span></a></li>
+												<li><a href=""><span>Дополнительный подпункт</span><span class="count">160</span></a></li>
+											</ul>
+										</li>
+										<li><a href=""><span>test2</span><span class="count">160</span></a></li>
+										<li><a href=""><span>test3</span><span class="count">160</span></a></li>
+									</ul>
+								</li>
+								<li><a href=""><span>Домашняя обувью</span></a></li>
+								<li class="active"><a href=""><span>Кроссовки и кеды</span><span class="count">160</span></a></li>
+								<li><a href=""><span>Мокасины</span><span class="count">160</span></a></li>
+								<li><a href=""><span>Резиновая обувь</span><span class="count">160</span></a></li>
+								<li><a href=""><span>Сандали</span><span class="count">160</span></a></li>
+								<li><a href=""><span>Сапоги</span><span class="count">160</span></a></li>
+								<li><a href=""><span>Слипоны</span><span class="count">160</span></a></li>
+								<li><a href=""><span>Туфли</span><span class="count">160</span></a></li>
+							</ul>
+						</li>
+						<li class="parent"><a href=""><span>Одежда</span><span class="count">160</span></a></li>
+						<li class="parent"><a href=""><span>Белье</span><span class="count">160</span></a></li>
+						<li class="parent"><a href=""><span>Аксессуары</span><span class="count">160</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-10 col-xl-10 col-md-9 no-pd">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+							<div class="catalog_item-container" id="1">
+								<div class="dop_img">
+									<div class="pager_sect"> 
+										<img src="img/dop_img1.png" alt="" data-uri="img/tovar.png" class="slick-current">
+										<!-- <img src="img/dop_img1.png" alt="">  -->
+									</div>
+								</div>
+								<div class="catalog_item">
+									<figure>
+										<a href="#"> 
+											<img src="img/test1.jpg">
+										</a>
+										<div class="markers">
+											<div class="marker blue">new</div>
+											<div class="marker gray">Premium</div>
+										</div>
+									</figure>
+										<div class="info">
+											<p class="price">
+												<span class="discount">-30%</span>
+												<span class="old_price rub">8700</span>
+												<span class="new_price rub">3700</span>
+											</p>	
+											<a href="#" class="item_name"> 
+												<span class="model">Under Armour / Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, labore!</span>
+											</a>
+											<div class="prod_row">
+												<div class="rating_container">
+													<div class="stars"></div>
+													<div class="star_progress"></div>
+												</div> 
+												<span class="votes">9</span> 
+												<a href="" class="favor">
+													<i class="heart"></i>
+												</a> 
+											</div>
+										</div>
+								</div>
+								<div class="dop">
+									<div class="extra">
+										<p class="dop_size">Размеры в наличии (RUS):</p>
+										<ul class="sizes">
+											<li>39</li>
+											<li>40</li>
+											<li>41</li>
+											<li>42</li>
+										</ul>
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+							<div class="catalog_item-container" id="2">
+								<div class="dop_img">
+									<div class="pager_sect"> 
+										<img src="img/dop_img1.png" alt="" data-uri="img/tovar.png" class="slick-current">
+										<!-- <img src="img/dop_img1.png" alt="">  -->
+									</div>
+								</div>
+								<div class="catalog_item">
+									<figure>
+										<a href="#"> 
+											<img src="img/test2.jpg">
+										</a>
+										<div class="markers">
+											<div class="marker blue">new</div>
+											<div class="marker gray">Premium</div>
+										</div>
+									</figure>
+										<div class="info">
+											<p class="price">
+												<span class="discount">-30%</span>
+												<span class="old_price rub">8700</span>
+												<span class="new_price rub">3700</span>
+											</p>	
+											<a href="#" class="item_name"> 
+												<span class="model">Under Armour / Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, labore!</span>
+											</a>
+											<div class="prod_row">
+												<div class="rating_container">
+													<div class="stars"></div>
+													<div class="star_progress"></div>
+												</div> 
+												<span class="votes">9</span> 
+												<a href="" class="favor">
+													<i class="heart"></i>
+												</a> 
+											</div>
+										</div>
+								</div>
+								<div class="dop">
+									<div class="extra">
+										<p class="dop_size">Размеры в наличии (RUS):</p>
+										<ul class="sizes">
+											<li>39</li>
+											<li>40</li>
+											<li>41</li>
+											<li>42</li>
+										</ul>
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+							<div class="catalog_item-container" id="3">
+								<div class="dop_img">
+									<div class="pager_sect"> 
+										<img src="img/dop_img1.png" alt="" data-uri="img/tovar.png" class="slick-current">
+										<!-- <img src="img/dop_img1.png" alt="">  -->
+									</div>
+								</div>
+								<div class="catalog_item">
+									<figure>
+										<a href="#"> 
+											<img src="img/tovar.png">
+										</a>
+										<div class="markers">
+											<div class="marker blue">new</div>
+											<div class="marker gray">Premium</div>
+										</div>
+									</figure>
+										<div class="info">
+											<p class="price">
+												<span class="discount">-30%</span>
+												<span class="old_price rub">8700</span>
+												<span class="new_price rub">3700</span>
+											</p>	
+											<a href="#" class="item_name"> 
+												<span class="model">Under Armour / Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, labore!</span>
+											</a>
+											<div class="prod_row">
+												<div class="rating_container">
+													<div class="stars"></div>
+													<div class="star_progress"></div>
+												</div> 
+												<span class="votes">9</span> 
+												<a href="" class="favor">
+													<i class="heart"></i>
+												</a> 
+											</div>
+										</div>
+								</div>
+								<div class="dop">
+									<div class="extra">
+										<p class="dop_size">Размеры в наличии (RUS):</p>
+										<ul class="sizes">
+											<li>39</li>
+											<li>40</li>
+											<li>41</li>
+											<li>42</li>
+										</ul>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>	
+</div>
+	</main>
+	<footer>
+		<div class="f_top_line">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-4 order-1 order-sm-0 f_item">
+						<div class="contacts">
+							<p class="contact_title">Связаться с нами</p>
+							<p class="out_tel">Наш контактный номер телефона</p>
+							<a href="tel:000000" class="f_tel"><span>8 (800)</span> 555-25-25</a>
+							<a href="" class="f_problem">Проблемы с заказом?</a>
+							<a href="" class="f_ask">Задать вопрос</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 f_item">
+						<div class="menu_wrap">
+							<span class="f_menu_title">Сервис</span>
+							<ul class="f_menu">
+								<li class="f_menu_item"><a href="#"><span>Таблица размеров</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Как сделать заказ</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Отследить заказ</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Оплата и доставка</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Наши гарантии</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Как оплатить</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Возврат</span></a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-3 col-sm-4 f_item">
+						<div class="menu_wrap">
+							<span class="f_menu_title">О компании</span>
+							<ul class="f_menu">
+								<li class="f_menu_item"><a href="#"><span>Политика конфиденциальности</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Наши приемущества</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Качество</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Бонусная программа</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Новости   &   Блог</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>Контакты</span></a></li>
+								<li class="f_menu_item"><a href="#"><span>О нас</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 d-none d-md-block">
+						<div class="subscribe">
+							<p class="subs_title">Подпишитесь на нас</p>
+							<a href="" class="vk"></a>
+							<a href="" class="insta"></a>
+							<a href="" class="telegramm"></a>
+							<a href="" class="youtube"></a>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	<div class="f_bott_line">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-12"><div class="copy">© 2019. Bambuck Mall</div></div>
+					<div class="col-lg-6 col-md-6 col-sm-6 d-none d-sm-block"><div class="dev"><a href=""><span>Разработка сайта</span> SP-Artgroup</a></div></div>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+</body>
+</html>
+
+<script>
+$( document ).ready(function() {
+    var slider;
+    var windowWidth = $(window).width(); 
+    var mobileSettings = {
+    	minSlides: 1,
+    	controls: false
+    	// adaptiveHeight: true
+    };
+    var desktopSettings = {
+    	mode: 'horizontal',
+    	minSlides: 3,
+    	maxSlides: 3,
+    	slideMargin: 20,
+    	slideWidth: 460,
+    	moveSlides: 1,
+    	controls: true,
+    	adaptiveHeight: true,
+    	pager: false
+    };
+
+    if(windowWidth > 767){
+    	var slider = $('.slider_cat').bxSlider(desktopSettings);
+    }else{
+    	var slider = $('.slider_cat').bxSlider(mobileSettings);
+    }
+    $(window).on('resize', function() {
+    	windowWidth = $(window).width();
+    	if(windowWidth < 768){
+    		slider.reloadSlider(mobileSettings);
+    	}else{
+    		slider.reloadSlider(desktopSettings);
+    	}
+
+    });
+	$('.catalog_item-container').hover(
+		function(){
+			$(this).addClass('hover');
+
+			// $(this).css({"height": $(this).find(".catalog_item").height()});
+			$(this).children(".pager_sect").slick({});
+		},
+		function(){
+			$(this).removeClass('hover');
+	});
+});
+
+
+// инициализация, и переключение картинок при клике и наведении, добавить соотв. стили, resize img.get
+$(document).ready(function(){
+	
+	$('.catalog_item-container').each(function(i, node){
+		var uri = $(this).find('.pager_sect img').attr("data-uri");
+		// $(this).find('.catalog_item img').attr("src", uri);
+	});
+
+	$('.pager_sect img').hover(
+	function(){addCurPager($(this));},
+	function(){});
+
+	$('.pager_sect img').on('click', function(){
+		addCurPager($(this));
+	});
+	function addCurPager(elem){
+		$(elem).parent().find('.slick-current').removeClass();
+	  	$(elem).addClass('slick-current');
+	  	var uri = $(elem).attr("data-uri");
+	  	$(elem).closest('.catalog_item-container').find('.catalog_item img').attr("src", uri);
+	}
+
+
+	/* Для бокового меню раскрытие подпунктов*/
+
+	$('.parent > a').on('click', function(e){
+		e.preventDefault();
+		console.log("parent");
+		clickLeftCatalog($(this));
+	});
+	$('.submenu_lvl2 > li > a').on('click', function(e){
+		e.preventDefault();
+		console.log($(this));
+		clickLeftCatalog($(this));
+	});
+	$('.submenu_lvl3 > li > a').on('click', function(e){
+		e.preventDefault();
+		console.log($(this));
+		clickLeftCatalog($(this));
+	});
+	
+	function clickLeftCatalog(itemMenu){
+		// if($(this).attr("href") != ''){
+			var submenu = $(itemMenu).parent();
+			console.dir(submenu);
+			if(!$(submenu).hasClass('active')){
+				$(submenu).addClass('active');
+			}else{
+				$(submenu).removeClass('active');
+			}
+		// }
+	}
+	/* сортировка и фильтры */
+	$(".sort_panel .current").on("click", function(e){
+		e.preventDefault();
+		if(!$(this).hasClass("open")){
+			$(this).addClass("open");
+		}else{
+			$(this).removeClass("open");
+		}
+		$(document).click(function(e) {
+			// скрытие сортировки
+			if ($(e.target).closest(".sort_panel").length) return;
+			$(".sort_panel .current").removeClass("open");
+		});
+	});
+	$(".mob_filter").on("click", function(){
+		if(!$(this).hasClass("open")){
+			$(this).addClass("open");
+		}else{
+			$(this).removeClass("open");
+		}
+	});
+	function onselect(){
+		console.log("test");
+	}
+	$('.filter_panel select').styler();
+});
+</script>

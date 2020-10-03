@@ -1,0 +1,106 @@
+.table_sizes{
+	position: relative; 
+	border: 1px solid;
+	padding: 45px 40px;
+	box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.05);
+	border-radius: 5px;
+	background-color: #fff;
+	width: 700px; 
+}
+.table_sizes .close_table{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url(img/form_close.png) no-repeat;
+	top: 15px;
+	right: 15px;
+}
+.table_sizes .title{
+	color: #3A4354;
+	font-size: 22px;
+	font-family: 'Gilroy Medium';
+	text-align: center;
+	padding-bottom: 30px;
+}
+.table_sizes .brands_list{
+	display: flex;
+	flex-flow: row wrap;
+	padding-bottom: 40px;
+}
+.table_sizes .brands_list a{
+	border: 1px solid #EEEEF5;
+	border-radius: 3px;
+	flex: 1 1 32%;
+	max-width: 32%;
+	padding: 21px 0;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-color: #fff;
+}
+.table_sizes .brands_list a:hover,
+.table_sizes .brands_list a:active,
+.table_sizes .brands_list a.active
+{
+	background-color: #FF5E62;
+}
+.table_sizes .brands_list a:nth-child(3),
+.table_sizes .brands_list a:nth-child(6){
+	margin-right: 0;
+}
+.table_sizes .brands_list .adidas{
+	background: url(img/adidas_black.png) no-repeat center;
+}
+.table_sizes .brands_list .timberland{
+
+	background: url(img/timberland_brand.png) no-repeat center;
+}
+.table_sizes .brands_list .new_balance{
+
+	background: url(img/new_balance_brand.png) no-repeat center;
+}
+.table_sizes .brands_list .puma{
+
+	background: url(img/puma_brand.png) no-repeat center;
+}
+.table_sizes .brands_list .asics{
+
+	background: url(img/asics_brand.png) no-repeat center;
+}
+.table_sizes .brands_list .nike{
+
+	background: url(img/nike_brand.png) no-repeat center;
+}
+
+.table_sizes .grid_sizes{
+	max-height: 400px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+/* формить в шаблон битркис */
+table.template-table{
+	width: 100%;
+}
+table.template-table tr{
+	height: 50px;
+}
+table.template-table tr:first-child td{
+	background-color: #FF5E62;
+	color: #fff;
+	font-size: 12px;
+	font-family: 'Gilroy ExtraBold';
+}
+table.template-table tr:nth-child(even){
+	background: #fff;
+}
+table.template-table tr:nth-child(odd){
+	background: #f5f5fb;
+}
+table.template-table tr td{
+	font-family: 'Gilroy Medium';
+	font-size: 14px;
+	color: #3A4354;
+}
+table.template-table td{
+	text-align: center;
+}

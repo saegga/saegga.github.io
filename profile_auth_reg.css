@@ -1,0 +1,382 @@
+.clearfix{
+	display: block;
+	clear: both;
+}
+.auth_reg_container{
+	background-color: #F5F6F8;
+}
+
+/* Форма авторизации */
+.auth_reg_container .form_auth{
+	margin: 100px auto;
+}
+.form_auth{
+	background-color: #fff;
+	max-width: 460px;
+	padding: 45px 50px 50px 50px;
+	text-align: center;
+	border-radius: 5px;
+}
+.form_auth .auth_title{
+	color: #3A4354;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	font-family: 'Gilroy SemiBold';
+}
+.path_to_reg{
+	color: #85889F;
+	font-size: 13px;
+	text-align: center;
+}
+.path_to_reg a,
+.path_to_reg a:hover,
+.forgot_pass,
+.forgot_pass:hover,
+.confirm_oferta a,
+.confirm_oferta a:hover
+{	text-decoration: none;
+	color: #FF5E62;
+	border-bottom: 1px solid rgba(255, 94, 98, 0.2);
+	font-size: 15px;
+}
+.forgot_pass{
+	display: inline-block;
+	margin-top: 20px;
+}
+.auth_reg_container form{
+	padding-top: 35px;
+}
+.form_inp{
+	display: block;
+	width: 100%;
+	outline: none;
+	border: 1px solid #E8EBFC;
+	background: #F5F6FC;
+	border-radius: 3px;
+	padding: 0 15px;
+	height: 50px;
+	font-size: 14px;
+	color: #3A4354;
+	margin-bottom: 15px;
+}
+.form_inp::-webkit-input-placeholder {
+  color: #868CB4;
+}
+.form_inp::-moz-placeholder {
+  color: #868CB4;
+}
+.form_inp:-ms-input-placeholder {
+  color: #868CB4;
+}
+.form_inp:-moz-placeholder { 
+  color: #868CB4;
+}
+.form_inp:focus{
+	background: #fff;
+	border: 1px solid #E7E7EB;
+}
+textarea::-webkit-input-placeholder {
+  color: #868CB4;
+}
+textarea::-moz-placeholder {
+  color: #868CB4;
+}
+textarea:-ms-input-placeholder {
+  color: #868CB4;
+}
+textarea:-moz-placeholder { 
+  color: #868CB4;
+}
+.btn.auth_btn{
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+.separ_or{
+	display: block;
+	overflow: hidden;
+	position: relative;
+	color: #85889F;
+	font-size: 14px;
+	font-family: 'Gilroy Regular';
+	line-height: 1;
+	margin-top: 25px;
+}
+.separ_or:before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1px;
+    background: #EEEEF5;
+    border-width: 0 0px;
+    margin-left: -100%;
+    position: relative;
+    left: -14px;
+}
+.separ_or:after{
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	width: 100%;
+	height: 1px;
+	background: #EEEEF5;
+	border-width: 0 0px;
+	margin-right: -100%;
+	position: relative;
+	right: -14px;
+}
+.soc_auth{
+	margin-top: 25px;
+}
+.soc_auth a{
+	display: inline-block;
+	margin-right: 15px;
+}
+.soc_auth a:last-child{
+	margin-right: 0;
+}
+.soc_auth i{
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	background: url(img/spite_auth_soc.png) no-repeat;
+}
+.soc_auth .vk{
+	background-position: -97px -5px;
+}
+.soc_auth .facebook{
+	background-position: -5px -5px;
+}
+.soc_auth .google{
+	background-position: -51px -5px;
+}
+.soc_auth .insta{
+	background-position: -143px -5px;
+}
+
+/* РЕГИСТРАЦИЯ */
+.confirm{
+	display: block;
+	margin: 0;
+	text-align: left;
+	font-size: 12px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #EEEEF5;
+	border-radius: 3px;
+	padding: 0 15px;
+	margin-bottom: 25px;
+}
+.confirm input:checked ~ .check{
+	background: url(img/check_sprite.png) 0px 0px;
+}
+.confirm .check{
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	background: url(img/check_sprite.png) -17px 0px;
+	vertical-align: middle;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.confirm span{
+	display: inline-block;
+	vertical-align: middle;
+	color: rgba(58, 67, 84, 0.7);
+	font-family: 'Gilroy Regular';
+}
+.confirm_oferta{
+	font-size: 13px;
+	color: #85889F;
+	font-family: 'Gilroy Regular';
+	padding-top: 20px;
+}
+.confirm_oferta{}
+
+
+/* Персональный кабинет */
+.personal_container{
+	max-width: 460px;
+	margin: 0 auto;
+}
+.heading{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.heading .title,
+.heading .descr{
+	text-align: center;
+}
+.heading .title{
+	font-size: 22px;
+	color: #3A4354;
+	font-family: 'Gilroy Bold';
+}
+.heading .descr{
+	color: #85889F;
+	font-size: 14px;
+	font-family: 'Gilroy Regular';
+}
+.personal_form{
+	/*margin-top: 30px;*/
+}
+.personal_form .inp_container{
+	position: relative;
+	margin-bottom: 15px;
+}
+.group_form input:last-child{
+	margin-bottom: 0;
+}
+.personal_form hr{
+	margin: 25px 0;
+	border: 1px solid #EEEEF5;
+}
+.confirm.confirm_personal{
+	font-size: 14px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+.btn.btn_change_pers{
+	display: block;
+	width: auto;
+	margin: 0 auto;
+	padding: 0;
+}
+.inp_container .complete{
+	position: absolute;
+	background: url(img/complete.png) no-repeat;
+	width: 20px;
+	height: 20px;
+	right: 15px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/* Проблемы с заказом */
+.problem_form{
+	max-width: 700px; 
+	margin: 30px auto 100px auto;
+}
+.problem_form .form_col{
+	width: 340px;
+	height: 180px;
+	float: left;
+}
+.problem_form .form_col:first-child{
+	margin-right: 20px;
+}
+
+.problem_form .form_col textarea{
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+	border: 1px solid #E7E7EB;
+	background: #F5F6FC;
+	resize: none;
+	padding: 15px 20px 0 20px;
+	color: #3A4354;
+	font-size: 14px;
+	font-family: 'Gilroy Regular';
+}
+.problem_form .form_col textarea:focus{
+	background: #fff;
+}
+.problem_form .form_col textarea:
+.problem_form:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.btn.btn_send_problem{
+	display: block;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+/* Авторизация */
+@media(max-width: 576px){
+	.auth_reg_container .col-lg-12{
+		padding: 0;
+	}
+	.form_auth{
+		max-width: 100%;
+		width: 100%;
+		margin: 0;
+	}
+	.form_auth .auth_title{
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.form_auth{
+	    padding: 35px 15px 50px 15px;
+	}
+	.form_inp{
+		height: 46px;
+		line-height: 46px;
+	}
+	.btn.auth_btn{
+		height: 42px;
+		line-height: 42px;
+	}
+	.path_to_reg a,
+	.forgot_pass{
+		font-size: 13px;
+	}
+}
+
+@media(max-width: 768px){
+	.heading{
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+}
+
+/* Регистрация */
+@media(max-width: 576px){
+	.confirm{
+		display: flex;
+		align-items: center;
+		line-height: 1;
+	}
+	
+}
+@media(max-width: 340px){
+	.confirm .check{
+		width: 18px;
+	}
+}
+
+/* Персональный кабинет */
+
+@media(max-width: 576px){
+	.personal_container{
+		margin: 20px auto;
+	}
+	.heading .title{
+		font-size: 18px;
+	}
+	.heading .descr{
+		font-size: 13px;
+	}
+	.confirm.confirm_personal{
+		font-size: 12px;
+	}
+}
+
+/* Проблемы с заказом */
+@media(max-width: 768px){
+	.problem_form .form_col{
+		width: 100%;
+		float: unset;
+	}
+	.problem_form .form_col:first-child{
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+}

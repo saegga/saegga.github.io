@@ -1,0 +1,119 @@
+.favorits_list{}
+.favor_item{
+	position: relative;
+	padding: 20px 25px 25px 25px;
+	height: 210px;
+	overflow: hidden;
+	border: 1px solid #E7E7EB;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.favor_item .favor_img img{
+	max-width: 100px;
+}
+.favor_item .favor_img{
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+	height: 100%;
+}
+.favor_item .favor_info:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.favor_item .price_block{
+	float: right;
+	color: #3A4354;
+}
+.favor_item .price_block .new_price,
+.favor_item .m_price_block .new_price{
+	color: #FF5E62;
+	font-size: 17px;
+	font-family: 'Gilroy Bold';
+	line-height: 22px;
+}
+.favor_item .price_block .old_price,
+.favor_item .m_price_block .old_price{
+	color: #85889F;
+	text-decoration: line-through;
+	font-size: 16px;
+	font-family: 'Gilroy Regular';
+}
+.favor_item .price_block .norm_price,
+.favor_item .m_price_block .norm_price{
+	font-size: 17px;
+	font-family: 'Gilroy Bold';
+}
+.favor_item .m_price_block .new_price,
+.favor_item .m_price_block .old_price{
+	display: inline-block;
+}
+.favor_item .title{
+	display: inline-block;
+	max-width: 55%;
+	max-height: 45px;
+	font-family: 'Gilroy SemiBold';
+	font-size: 14px;
+	color: #3A4354;
+	vertical-align: top;
+	overflow: hidden;
+}
+.favor_item .property{
+	font-family: 'Gilroy Regular';
+	font-size: 14px;
+	padding-top: 10px;
+}
+.favor_item .favor_buttons{
+	padding-top: 10px;
+}
+.favor_item .btn.add_to_cart{
+	height: 38px;
+	line-height: 38px;
+	padding: 0 20px;
+	font-size: 14px;
+	box-shadow: none;
+}
+.favor_item .delete_favor{
+	color: #3A4354;
+	font-size: 14px;
+	text-decoration: none;
+	border-bottom: 1px solid #D8D9DD;
+	margin-left: 20px;
+}
+.m_delete_favor{
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	width: 20px;
+	height: 20px;
+	background: url(img/delete_favor.png) no-repeat;
+}
+@media(max-width: 767px){
+	.favorits_list{padding: 0;}
+	.favor_item{
+		height: auto;
+		padding: 20px 15px 20px 15px;
+		border: none;
+		border-top: 1px solid #EEEEF5;
+		margin-bottom: 0;
+	}
+	.favor_item .favor_img{
+		height: 135px;
+	}
+	.favor_item .title, .favor_item .property	{font-size: 13px;}
+	.favor_item .property{
+		padding-top: 5px;
+	}
+	.favor_item .favor_buttons{
+		padding-top: 0;
+		clear: both;
+	}
+	.favor_item .btn.add_to_cart{
+		width: 100%;
+		margin-top: 25px;
+	}
+	.delete_favor{
+		display: none;
+	}
+}
