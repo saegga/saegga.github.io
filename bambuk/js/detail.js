@@ -12,20 +12,20 @@ $(document).ready(function(e) {
 
 	var width = $(this).width();
 
-	// var desctopSliderProduct = {
-	// 	nextText: '',
-	// 	prevText: '',
-	// 	infiniteLoop: true,
-	// 	pagerCustom: '#bx-pager',
-	// 	controls: false
-	// };
-	// var mobileSliderProduct = {
-	// 	minSlides: 1,
-	// 	maxSlides: 1,
-	// 	moveSlides: 1,
-	// 	pager: true,
-	// 	controls: false
-	// };
+	var desctopSliderProduct = {
+		nextText: '',
+		prevText: '',
+		infiniteLoop: true,
+		pagerCustom: '#bx-pager',
+		controls: true
+	};
+	var mobileSliderProduct = {
+		minSlides: 1,
+		maxSlides: 1,
+		moveSlides: 1,
+		pager: true,
+		controls: false
+	};
 
 	// var pagerSlider = $('#bx-pager').bxSlider({
 	// 	mode: 'vertical',
@@ -40,32 +40,32 @@ $(document).ready(function(e) {
 	// });
 
 	$('.item_viewed').each(function(i, node){
-	var slider = 'slider-' + $(node).attr("id");
-	var pager = 'nav-' + $(node).attr("id");
-	$(node).find('.slider_sect-item').addClass(slider);
-	$(node).find('.pager_sect').addClass(pager);
+		var slider = 'slider-' + $(node).attr("id");
+		var pager = 'nav-' + $(node).attr("id");
+		$(node).find('.slider_sect-item').addClass(slider);
+		$(node).find('.pager_sect').addClass(pager);
 
 
-	 $('.' + slider).slick({
-		  slidesToShow: 1,
-		  slidesToScroll: 1,
-		  arrows: false,
-		  fade: true,
-		  asNavFor: '.' + pager,
-		  centerPadding: 0,
-		  infinite: false
-	});
-	$('.' + pager).slick({
-		  vertical: true,
-		  slidesToShow: 10,
-		  slidesToScroll: 1,
-		  asNavFor: '.' + slider,
-		  dots: true,
-		  focusOnSelect: true,
-		  centerPadding: 0,
-		  variableWidth: true,
-		  infinite: false
-	});
+		 $('.' + slider).slick({
+			  slidesToShow: 1,
+			  slidesToScroll: 1,
+			  arrows: false,
+			  fade: true,
+			  asNavFor: '.' + pager,
+			  centerPadding: 0,
+			  infinite: false
+		});
+		$('.' + pager).slick({
+			  vertical: true,
+			  slidesToShow: 10,
+			  slidesToScroll: 1,
+			  asNavFor: '.' + slider,
+			  dots: true,
+			  focusOnSelect: true,
+			  centerPadding: 0,
+			  variableWidth: true,
+			  infinite: false
+		});
 });
 
 	$('.slides_viewed').slick({
